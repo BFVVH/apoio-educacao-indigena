@@ -372,6 +372,36 @@ main {
     margin-bottom: 0;
 }
 
+.secao-contato {
+    margin-top: 48px;
+}
+
+.opcoes-contato {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.opcoes-contato article {
+    padding: 24px;
+    border: 1px solid #dce3d9;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.opcoes-contato h3 {
+    margin-top: 0;
+}
+
+.opcoes-contato p {
+    line-height: 1.5;
+}
+
+.opcoes-contato a {
+    color: #254d3b;
+    font-weight: 700;
+}
+
 .rodape {
     background: #eaf0e9;
     border-top: 1px solid #dce3d9;
@@ -428,6 +458,10 @@ main {
     }
 
     .lista-materiais {
+        grid-template-columns: 1fr;
+    }
+
+    .opcoes-contato {
         grid-template-columns: 1fr;
     }
 }
