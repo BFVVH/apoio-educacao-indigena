@@ -2,6 +2,8 @@
 
 Site demonstrativo de apoio à educação escolar indígena. A ideia é que cada escola organize materiais para seus estudantes e acompanhe pedidos de apoio educacional.
 
+**Acesse o site:** [Vozes da Escola no GitHub Pages](https://bfvvh.github.io/apoio-educacao-indigena/)
+
 Esta versão não tem escolas reais cadastradas. As atividades são gerais; conteúdos ligados à língua e à cultura de uma comunidade precisariam ser preparados com sua participação e autorização.
 
 ## Páginas
