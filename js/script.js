@@ -1,4 +1,4 @@
-// salva pedidos de exemplo neste navegador
+// salva os pedidos no navegador
 const formularioPedido = document.querySelector("#formulario-pedido");
 
 if (formularioPedido) {
@@ -22,10 +22,10 @@ if (formularioPedido) {
             const pedidos = JSON.parse(localStorage.getItem("pedidosVozesDaEscola") || "[]");
             pedidos.push(pedido);
             localStorage.setItem("pedidosVozesDaEscola", JSON.stringify(pedidos));
-            resposta.textContent = "Pedido salvo neste navegador. Seu protocolo é " + protocolo + ".";
+            resposta.textContent = "Pedido registrado. Seu protocolo é " + protocolo + ".";
             formularioPedido.reset();
         } catch (erro) {
-            resposta.textContent = "Não foi possível salvar o pedido neste navegador.";
+            resposta.textContent = "Não foi possível registrar o pedido.";
         }
     });
 }
@@ -49,7 +49,7 @@ if (formularioConsulta) {
             });
 
             if (!pedido) {
-                resposta.textContent = "Pedido não encontrado neste navegador. Confira o protocolo.";
+                resposta.textContent = "Pedido não encontrado. Confira o protocolo.";
                 return;
             }
 
@@ -59,7 +59,40 @@ if (formularioConsulta) {
             resposta.textContent = "Pedido encontrado: " + pedido.protocolo + ".";
             dadosPedido.hidden = false;
         } catch (erro) {
-            resposta.textContent = "Não foi possível consultar os pedidos neste navegador.";
+            resposta.textContent = "Não foi possível consultar os pedidos.";
         }
     });
+}
+
+// mostra os pedidos para a equipe
+const listaPedidos = document.querySelector("#lista-pedidos");
+
+if (listaPedidos) {
+    const aviso = document.querySelector("#aviso-lista-pedidos");
+
+    try {
+        const pedidos = JSON.parse(localStorage.getItem("pedidosVozesDaEscola") || "[]");
+
+        if (pedidos.length === 0) {
+            aviso.textContent = "Nenhum pedido registrado até agora.";
+        } else {
+            pedidos.forEach(function (pedido) {
+                const item = document.createElement("li");
+                const titulo = document.createElement("h3");
+                const tipo = document.createElement("p");
+                const descricao = document.createElement("p");
+                const status = document.createElement("p");
+
+                titulo.textContent = pedido.protocolo;
+                tipo.textContent = "Tipo: " + pedido.tipo;
+                descricao.textContent = "Descrição: " + pedido.descricao;
+                status.textContent = "Status: " + pedido.status;
+
+                item.append(titulo, tipo, descricao, status);
+                listaPedidos.append(item);
+            });
+        }
+    } catch (erro) {
+        aviso.textContent = "Não foi possível carregar os pedidos.";
+    }
 }

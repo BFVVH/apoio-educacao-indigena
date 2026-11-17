@@ -335,6 +335,43 @@ main {
     margin-bottom: 0;
 }
 
+.link-equipe {
+    margin-top: 32px;
+}
+
+.link-equipe a {
+    color: #254d3b;
+    font-weight: 700;
+}
+
+.secao-pedidos-equipe {
+    margin-top: 40px;
+}
+
+.lista-pedidos {
+    max-width: 800px;
+    margin: 24px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-pedidos li {
+    margin-bottom: 16px;
+    padding: 24px;
+    border: 1px solid #dce3d9;
+    border-radius: 12px;
+    background: #fff;
+    overflow-wrap: anywhere;
+}
+
+.lista-pedidos h3 {
+    margin-top: 0;
+}
+
+.lista-pedidos p:last-child {
+    margin-bottom: 0;
+}
+
 .rodape {
     background: #eaf0e9;
     border-top: 1px solid #dce3d9;
