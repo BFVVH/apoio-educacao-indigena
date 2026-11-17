@@ -398,6 +398,30 @@ main {
     margin-bottom: 0;
 }
 
+.status-pedido {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #eaf0e9;
+    color: #254d3b;
+    font-weight: 700;
+}
+
+.status-pedido[data-status="Recebido"] {
+    background: #fff3d8;
+    color: #654800;
+}
+
+.status-pedido[data-status="Em análise"] {
+    background: #e3eef7;
+    color: #234c70;
+}
+
+.status-pedido[data-status="Concluído"] {
+    background: #dcefe3;
+    color: #1d5736;
+}
+
 .link-equipe {
     margin-top: 32px;
 }

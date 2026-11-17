@@ -82,7 +82,9 @@ if (formularioConsulta) {
 
             document.querySelector("#pedido-tipo").textContent = pedido.tipo;
             document.querySelector("#pedido-descricao").textContent = pedido.descricao;
-            document.querySelector("#pedido-status").textContent = pedido.status;
+            const statusPedido = document.querySelector("#pedido-status");
+            statusPedido.textContent = pedido.status;
+            statusPedido.dataset.status = pedido.status;
             document.querySelector("#pedido-resposta").textContent = pedido.resposta || "Aguardando resposta.";
             resposta.textContent = "Pedido encontrado: " + pedido.protocolo + ".";
             dadosPedido.hidden = false;
@@ -117,6 +119,8 @@ if (listaPedidos) {
             tipo.textContent = "Tipo: " + pedido.tipo;
             descricao.textContent = "Descrição: " + pedido.descricao;
             status.textContent = "Status: " + pedido.status;
+            status.className = "status-pedido";
+            status.dataset.status = pedido.status;
             resposta.textContent = "Resposta: " + (pedido.resposta || "Aguardando resposta.");
 
             item.append(titulo, tipo, descricao, status, resposta);
