@@ -131,6 +131,32 @@ main {
     font-weight: 700;
 }
 
+.apresentacao-pagina {
+    padding: 40px;
+    border-radius: 16px;
+    background: #e9f1e6;
+}
+
+.apresentacao-pagina h1 {
+    margin: 0 0 16px;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.apresentacao-pagina p,
+.secao-texto p {
+    max-width: 760px;
+    line-height: 1.65;
+}
+
+.secao-texto {
+    padding: 28px 0;
+    border-bottom: 1px solid #dce3d9;
+}
+
+.secao-texto h2 {
+    margin-bottom: 12px;
+}
+
 .rodape {
     background: #eaf0e9;
     border-top: 1px solid #dce3d9;
@@ -171,6 +197,10 @@ main {
     }
 
     .destaque-inicial {
+        padding: 32px 24px;
+    }
+
+    .apresentacao-pagina {
         padding: 32px 24px;
     }
 
