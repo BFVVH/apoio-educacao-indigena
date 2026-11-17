@@ -63,6 +63,74 @@ main {
     padding: 48px 24px;
 }
 
+.destaque-inicial {
+    padding: 56px;
+    border-radius: 16px;
+    background: #e9f1e6;
+}
+
+.etiqueta {
+    margin: 0 0 12px;
+    color: #42624c;
+    font-weight: 700;
+}
+
+.destaque-inicial h1 {
+    margin: 0 0 18px;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+}
+
+.destaque-inicial > p:not(.etiqueta) {
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    color: #fff;
+    background: #254d3b;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.botao:hover,
+.botao:focus-visible {
+    background: #193b2b;
+}
+
+.caminhos-iniciais {
+    margin-top: 48px;
+}
+
+.cartoes-iniciais {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.cartoes-iniciais article {
+    padding: 24px;
+    border: 1px solid #dce3d9;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.cartoes-iniciais h3 {
+    margin-top: 0;
+}
+
+.cartoes-iniciais p {
+    line-height: 1.5;
+}
+
+.cartoes-iniciais a {
+    color: #254d3b;
+    font-weight: 700;
+}
+
 .rodape {
     background: #eaf0e9;
     border-top: 1px solid #dce3d9;
@@ -100,5 +168,13 @@ main {
     .conteudo-rodape {
         align-items: flex-start;
         flex-direction: column;
+    }
+
+    .destaque-inicial {
+        padding: 32px 24px;
+    }
+
+    .cartoes-iniciais {
+        grid-template-columns: 1fr;
     }
 }
