@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir apoio | Vozes da Escola</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="navegacao" aria-label="Navegação principal">
+            <a class="marca" href="../index.html">Vozes da Escola</a>
+            <div class="links-navegacao">
+                <a href="../index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="escolas.html">Escolas</a>
+                <a href="materiais.html">Materiais</a>
+                <a href="pedidos.html" aria-current="page">Pedir apoio</a>
+                <a href="faq.html">FAQ</a>
+                <a href="integrantes.html">Integrantes</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="apresentacao-pagina">
+            <h1>Pedido de apoio</h1>
+            <p>Use este formulário para experimentar o registro de uma necessidade educacional. O pedido fica salvo apenas neste navegador e não é enviado a uma escola.</p>
+        </section>
+
+        <form id="formulario-pedido" class="formulario-pedido">
+            <label for="tipo-pedido">Tipo de apoio</label>
+            <select id="tipo-pedido" name="tipo" required>
+                <option value="">Selecione</option>
+                <option value="Material de estudo">Material de estudo</option>
+                <option value="Acesso a atividade">Acesso a atividade</option>
+                <option value="Contato com educador">Contato com educador</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <label for="descricao-pedido">Descreva o que você precisa</label>
+            <textarea id="descricao-pedido" name="descricao" rows="5" maxlength="500" required></textarea>
+            <p class="ajuda-campo">Não inclua nome, telefone ou outros dados pessoais nesta demonstração.</p>
+
+            <button class="botao" type="submit">Registrar pedido</button>
+            <p id="resposta-pedido" role="status" aria-live="polite"></p>
+        </form>
+    </main>
+    <footer class="rodape">
+        <div class="conteudo-rodape">
+            <p><strong>Vozes da Escola</strong><br>Apoio à educação escolar indígena.</p>
+            <a href="contato.html">Contato</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -257,6 +257,50 @@ main {
     line-height: 1.6;
 }
 
+.formulario-pedido {
+    max-width: 680px;
+    margin-top: 40px;
+    padding: 28px;
+    border: 1px solid #dce3d9;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.formulario-pedido label {
+    display: block;
+    margin: 20px 0 8px;
+    font-weight: 700;
+}
+
+.formulario-pedido label:first-child {
+    margin-top: 0;
+}
+
+.formulario-pedido select,
+.formulario-pedido textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aab9ad;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.ajuda-campo {
+    color: #52645a;
+    font-size: 0.9rem;
+}
+
+.formulario-pedido .botao {
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+}
+
+#resposta-pedido {
+    line-height: 1.5;
+}
+
 .rodape {
     background: #eaf0e9;
     border-top: 1px solid #dce3d9;
