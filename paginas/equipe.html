@@ -34,6 +34,29 @@
             <p id="aviso-lista-pedidos" role="status"></p>
             <ul id="lista-pedidos" class="lista-pedidos"></ul>
         </section>
+
+        <section class="secao-pedidos-equipe" aria-labelledby="titulo-resposta-equipe">
+            <h2 id="titulo-resposta-equipe">Responder a um pedido</h2>
+            <form id="formulario-equipe" class="formulario-pedido">
+                <label for="protocolo-equipe">Pedido</label>
+                <select id="protocolo-equipe" name="protocolo" required>
+                    <option value="">Selecione um protocolo</option>
+                </select>
+
+                <label for="status-equipe">Novo status</label>
+                <select id="status-equipe" name="status" required>
+                    <option value="">Selecione</option>
+                    <option value="Em análise">Em análise</option>
+                    <option value="Respondido">Respondido</option>
+                    <option value="Concluído">Concluído</option>
+                </select>
+
+                <label for="mensagem-equipe">Resposta</label>
+                <textarea id="mensagem-equipe" name="resposta" rows="4" maxlength="500"></textarea>
+                <button class="botao" type="submit">Salvar atualização</button>
+                <p id="aviso-resposta-equipe" role="status" aria-live="polite"></p>
+            </form>
+        </section>
     </main>
     <footer class="rodape">
         <div class="conteudo-rodape">
