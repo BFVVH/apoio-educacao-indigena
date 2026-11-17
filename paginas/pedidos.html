@@ -46,6 +46,25 @@
             <button class="botao" type="submit">Registrar pedido</button>
             <p id="resposta-pedido" role="status" aria-live="polite"></p>
         </form>
+
+        <section class="consulta-pedido" aria-labelledby="titulo-consulta">
+            <h2 id="titulo-consulta">Consultar pedido</h2>
+            <p>Digite o protocolo recebido após o registro. A consulta funciona somente neste navegador.</p>
+            <form id="formulario-consulta" class="formulario-pedido">
+                <label for="protocolo-consulta">Protocolo</label>
+                <input id="protocolo-consulta" name="protocolo" type="text" placeholder="VDE-..." required>
+                <button class="botao" type="submit">Consultar</button>
+            </form>
+            <p id="resposta-consulta" role="status" aria-live="polite"></p>
+            <dl id="dados-pedido" class="dados-pedido" hidden>
+                <dt>Tipo de apoio</dt>
+                <dd id="pedido-tipo"></dd>
+                <dt>Descrição</dt>
+                <dd id="pedido-descricao"></dd>
+                <dt>Status</dt>
+                <dd id="pedido-status"></dd>
+            </dl>
+        </section>
     </main>
     <footer class="rodape">
         <div class="conteudo-rodape">
