@@ -233,6 +233,30 @@ main {
     padding-left: 22px;
 }
 
+.perguntas {
+    max-width: 800px;
+    margin-top: 40px;
+}
+
+.perguntas details {
+    margin-bottom: 12px;
+    padding: 20px 24px;
+    border: 1px solid #dce3d9;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.perguntas summary {
+    color: #254d3b;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.perguntas p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
 .rodape {
     background: #eaf0e9;
     border-top: 1px solid #dce3d9;
