@@ -1,4 +1,4 @@
-# Apoio à Educação
+# Vozes da Escola
 
 Protótipo acadêmico de uma plataforma de apoio à educação escolar indígena.
 
@@ -16,4 +16,4 @@ HTML, CSS e JavaScript.
 - `js/`: interações
 - `assets/`: imagens e materiais demonstrativos
 
-As páginas ainda são apenas uma estrutura inicial. As funcionalidades serão construídas e testadas nas próximas etapas.
+
