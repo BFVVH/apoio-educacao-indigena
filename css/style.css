@@ -36,6 +36,24 @@ body {
     white-space: nowrap;
 }
 
+.menu-toggle {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid #aab9ad;
+    border-radius: 6px;
+    color: #24342f;
+    background: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+.menu-toggle:focus-visible {
+    outline: 2px solid #254d3b;
+    outline-offset: 2px;
+}
+
 .links-navegacao {
     display: flex;
     flex-wrap: wrap;
@@ -477,12 +495,22 @@ main {
 
 @media (max-width: 760px) {
     .navegacao {
-        align-items: flex-start;
-        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
     }
 
     .links-navegacao {
+        display: none;
+        width: 100%;
+        flex-direction: column;
         gap: 4px;
+    }
+
+    .navegacao.menu-aberto .links-navegacao {
+        display: flex;
     }
 
     .conteudo-rodape {
@@ -520,6 +548,15 @@ main {
 }
 
 @media (max-width: 430px) {
+    .navegacao {
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .marca {
+        font-size: 1.05rem;
+    }
+
     .lista-integrantes li {
         align-items: flex-start;
         flex-direction: column;

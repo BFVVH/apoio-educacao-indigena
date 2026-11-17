@@ -1,3 +1,30 @@
+// abre e fecha o menu no celular
+const botaoMenu = document.querySelector(".menu-toggle");
+
+if (botaoMenu) {
+    const navegacao = botaoMenu.closest(".navegacao");
+
+    function definirMenuAberto(aberto) {
+        navegacao.classList.toggle("menu-aberto", aberto);
+        botaoMenu.setAttribute("aria-expanded", String(aberto));
+    }
+
+    botaoMenu.addEventListener("click", function () {
+        definirMenuAberto(botaoMenu.getAttribute("aria-expanded") !== "true");
+    });
+
+    document.addEventListener("keydown", function (evento) {
+        if (evento.key === "Escape" && botaoMenu.getAttribute("aria-expanded") === "true") {
+            definirMenuAberto(false);
+            botaoMenu.focus();
+        }
+    });
+
+    window.matchMedia("(max-width: 760px)").addEventListener("change", function () {
+        definirMenuAberto(false);
+    });
+}
+
 // salva os pedidos no navegador
 const formularioPedido = document.querySelector("#formulario-pedido");
 
