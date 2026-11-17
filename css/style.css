@@ -126,13 +126,30 @@ main {
     background: #193b2b;
 }
 
+.acoes-destaque {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.acoes-destaque .botao {
+    margin-top: 0;
+}
+
+.link-destaque {
+    color: #254d3b;
+    font-weight: 700;
+}
+
 .caminhos-iniciais {
     margin-top: 48px;
 }
 
 .cartoes-iniciais {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
 }
 
