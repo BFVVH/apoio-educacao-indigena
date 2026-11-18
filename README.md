@@ -30,3 +30,9 @@ Os pedidos ficam no `localStorage` do navegador. Não são enviados a uma instit
 
 O projeto usa HTML, CSS e JavaScript, sem dependências externas. As páginas estão em `paginas/`, os estilos em `css/style.css`, as interações em `js/script.js` e as imagens e ícones em `assets/`.
 
+## Créditos das imagens
+
+A foto da página inicial é de [Alisson Soares / Pexels](https://www.pexels.com/pt-br/foto/menina-garota-moca-festival-14969148/) e foi usada conforme a [licença do Pexels](https://www.pexels.com/license/). Ela é ilustrativa; a pessoa retratada não está vinculada ao projeto.
+
+A foto da página Materiais é de [Ambam Gorilla / Pexels](https://www.pexels.com/pt-br/foto/pessoa-selecionando-um-livro-de-uma-prateleira-interna-29031732/) e foi usada conforme a mesma licença.
+
