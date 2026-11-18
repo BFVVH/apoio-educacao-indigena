@@ -36,3 +36,5 @@ A foto da página inicial é de [Alisson Soares / Pexels](https://www.pexels.com
 
 A foto da página Materiais é de [Ambam Gorilla / Pexels](https://www.pexels.com/pt-br/foto/pessoa-selecionando-um-livro-de-uma-prateleira-interna-29031732/) e foi usada conforme a mesma licença.
 
+A foto da página Instituições parceiras é de [An Tran / Pexels](https://www.pexels.com/pt-br/foto/livros-caderno-notebook-mesa-12561284/) e foi usada conforme a mesma licença.
+
