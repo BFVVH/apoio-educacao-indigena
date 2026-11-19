@@ -461,6 +461,18 @@ main {
     border-color: var(--azul);
 }
 
+.formulario-pedido [aria-invalid="true"] {
+    border: 2px solid #b42332;
+}
+
+.erro-campo {
+    display: block;
+    min-height: 1.3em;
+    margin-top: 4px;
+    color: #9c1d2b;
+    font-size: 0.9rem;
+}
+
 .ajuda-campo {
     color: var(--texto-suave);
     font-size: 0.9rem;

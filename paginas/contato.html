@@ -52,6 +52,29 @@
                 </article>
             </div>
         </section>
+        <section class="secao-contato" aria-labelledby="titulo-formulario-contato">
+            <h2 id="titulo-formulario-contato">Envie uma mensagem</h2>
+            <form id="formulario-contato" class="formulario-pedido" novalidate>
+                <label for="contato-nome">Nome</label>
+                <input id="contato-nome" name="nome" type="text" autocomplete="name" required aria-describedby="erro-contato-nome">
+                <span class="erro-campo" id="erro-contato-nome"></span>
+
+                <label for="contato-email">E-mail</label>
+                <input id="contato-email" name="email" type="email" autocomplete="email" required aria-describedby="erro-contato-email">
+                <span class="erro-campo" id="erro-contato-email"></span>
+
+                <label for="contato-assunto">Assunto</label>
+                <input id="contato-assunto" name="assunto" type="text" required aria-describedby="erro-contato-assunto">
+                <span class="erro-campo" id="erro-contato-assunto"></span>
+
+                <label for="contato-mensagem">Mensagem</label>
+                <textarea id="contato-mensagem" name="mensagem" rows="5" required aria-describedby="erro-contato-mensagem"></textarea>
+                <span class="erro-campo" id="erro-contato-mensagem"></span>
+
+                <button class="botao" type="submit">Enviar mensagem</button>
+                <p id="resposta-contato" role="status" aria-live="polite"></p>
+            </form>
+        </section>
     </main>
     <footer class="rodape">
         <div class="conteudo-rodape">

@@ -176,3 +176,46 @@ if (listaPedidos) {
         }
     });
 }
+
+// valida o contato antes de mostrar a confirmacao
+const formularioContato = document.querySelector("#formulario-contato");
+
+if (formularioContato) {
+    const camposContato = ["nome", "email", "assunto", "mensagem"];
+
+    function validarContato() {
+        let valido = true;
+
+        camposContato.forEach(function (nome) {
+            const campo = formularioContato.elements[nome];
+            const erro = document.querySelector("#erro-contato-" + nome);
+            const valor = campo.value.trim();
+            let mensagem = "";
+
+            if (!valor) {
+                mensagem = "Preencha " + (nome === "email" ? "o e-mail" : nome === "assunto" ? "o assunto" : nome === "mensagem" ? "a mensagem" : "o nome") + ".";
+            } else if (nome === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(valor)) {
+                mensagem = "Digite um e-mail válido.";
+            }
+
+            erro.textContent = mensagem;
+            campo.setAttribute("aria-invalid", String(Boolean(mensagem)));
+            if (mensagem) valido = false;
+        });
+
+        return valido;
+    }
+
+    formularioContato.addEventListener("submit", function (evento) {
+        evento.preventDefault();
+        const resposta = document.querySelector("#resposta-contato");
+
+        if (!validarContato()) {
+            resposta.textContent = "Confira os campos destacados.";
+            return;
+        }
+
+        resposta.textContent = "Mensagem preenchida corretamente. O envio para uma equipe ainda não está disponível.";
+        formularioContato.reset();
+    });
+}
