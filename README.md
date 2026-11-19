@@ -53,3 +53,7 @@ A foto da página Materiais é de [Ambam Gorilla / Pexels](https://www.pexels.co
 
 A foto da página Instituições parceiras é de [An Tran / Pexels](https://www.pexels.com/pt-br/foto/livros-caderno-notebook-mesa-12561284/) e foi usada conforme a mesma licença.
 
+
+## Uso de inteligência artificial
+
+A inteligência artificial foi usada como apoio durante o desenvolvimento de estilos CSS e de algumas partes do JavaScript. Revisamos e ajustamos o código para integrar ao projeto e entender seu funcionamento.
